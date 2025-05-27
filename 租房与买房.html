@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>租房与买房必备知识实战手册</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .section-divider {
+            height: 4px;
+            background: linear-gradient(90deg, #3b82f6, #10b981, #f59e0b);
+            border-radius: 2px;
+            margin: 2rem 0;
+        }
+        .highlight-box {
+            border-left: 4px solid #3b82f6;
+            background-color: #f0f7ff;
+        }
+        .step-number {
+            width: 28px;
+            height: 28px;
+            background-color: #3b82f6;
+            color: white;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="max-w-4xl mx-auto px-4 py-8">
+    <header class="text-center mb-12">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">租房与买房必备知识实战手册</h1>
+        <p class="text-xl text-gray-600">大学生必修课：从水电缴费到烂尾楼避坑</p>
+        <div class="section-divider mx-auto w-1/3 mt-6"></div>
+    </header>
+
+    <section class="mb-16">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+            <i class="fas fa-home text-blue-500 mr-3"></i>
+            租房篇：水电费、网络安装与合同避坑
+        </h2>
+        
+        <div class="grid md:grid-cols-2 gap-6 mb-10">
+            <!-- 水电费缴纳 -->
+            <div class="card bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                    <i class="fas fa-tint text-blue-400 mr-2"></i>
+                    水电费缴纳：交给房东还是自己缴？
+                </h3>
+                <div class="space-y-4">
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h4 class="font-medium text-blue-700 mb-2">交给房东代缴（适合老旧小区/个人房东）</h4>
+                        <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                            <li>流程：每月查水电表读数→计算费用→微信/支付宝转账给房东</li>
+                            <li>风险：房东可能虚报用量（如电表实际走了50度，却按80度收费），需定期核对账单</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-green-50 p-4 rounded-lg">
+                        <h4 class="font-medium text-green-700 mb-2">自己直接缴费（适合品牌公寓/现代化小区）</h4>
+                        <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                            <li>操作：通过物业App、支付宝"生活缴费"或电表IC卡充值，避免被中间加价</li>
+                            <li>注意：缴费前确认账户名是否与房东一致，防止诈骗</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-purple-50 p-4 rounded-lg">
+                        <h4 class="font-medium text-purple-700 mb-2">合租分摊（多人共享水电表）</h4>
+                        <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                            <li>方案：按人数均摊或根据使用量协商</li>
+                            <li>建议用"水电费分摊计算器"小程序自动生成账单</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 网络安装 -->
+            <div class="card bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                    <i class="fas fa-network-wired text-green-500 mr-2"></i>
+                    网络安装：自己拉网线超详细步骤
+                </h3>
+                <div class="mb-4">
+                    <h4 class="font-medium text-gray-700 mb-2">材料准备：</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">CAT6网线</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">水晶头</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">网线钳</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">测线仪</span>
+                    </div>
+                </div>
+                <div class="space-y-3">
+                    <div class="flex items-start">
+                        <span class="step-number">1</span>
+                        <span class="flex-1">剥线：用网线钳剥开外皮，露出8根线芯（注意不要剪断内线）</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="step-number">2</span>
+                        <span class="flex-1">排序：按"橙白-橙-绿白-蓝-蓝白-绿-棕白-棕"顺序排列（T568B标准）</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="step-number">3</span>
+                        <span class="flex-1">压接：将线芯插入水晶头并用网线钳压紧，确保每根线顶到水晶头底部</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="step-number">4</span>
+                        <span class="flex-1">测试：用测线仪检测连通性（灯全亮表示成功）</span>
+                    </div>
+                </div>
+                <div class="mt-4 p-3 bg-yellow-50 rounded-lg">
+                    <h4 class="font-medium text-yellow-700 mb-1">布局技巧：</h4>
+                    <p class="text-gray-700">沿踢脚线固定网线，穿门缝时加保护套防止磨损，路由器建议放置在屋内中央位置</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 合同避坑指南 -->
+        <div class="card bg-white rounded-lg shadow-md p-6 mb-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                <i class="fas fa-file-contract text-red-500 mr-2"></i>
+                合同避坑指南：必须明确的条款
+            </h3>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <h4 class="font-medium text-gray-700 mb-2 flex items-center">
+                        <i class="fas fa-money-bill-wave text-blue-500 mr-2"></i>
+                        费用相关
+                    </h4>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                        <li>水电费单价是否超市场价（如电价超0.8元/度需警惕）</li>
+                        <li>押金退还规则（如退租时房东以"墙面老化"为由扣押押金如何应对）</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-medium text-gray-700 mb-2 flex items-center">
+                        <i class="fas fa-tools text-green-500 mr-2"></i>
+                        设施责任
+                    </h4>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                        <li>写明家电维修责任（如冰箱故障由房东3日内维修，否则租户可自行处理并抵扣租金）</li>
+                        <li>交接时拍照留存房屋损坏情况（避免退租时被索赔）</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-medium text-gray-700 mb-2 flex items-center">
+                        <i class="fas fa-exchange-alt text-purple-500 mr-2"></i>
+                        转租/解约
+                    </h4>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                        <li>提前解约是否退押金（建议约定"房东未按时交付房屋，租户可单方解除合同并索赔"）</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-medium text-gray-700 mb-2 flex items-center">
+                        <i class="fas fa-camera text-orange-500 mr-2"></i>
+                        交接记录
+                    </h4>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                        <li>入住时拍摄房屋全貌视频，重点记录已有损坏</li>
+                        <li>保存所有沟通记录（微信、短信等）</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="mb-16">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+            <i class="fas fa-building text-blue-500 mr-3"></i>
+            买房篇：房贷计算与烂尾楼应对
+        </h2>
+        
+        <div class="grid md:grid-cols-2 gap-6 mb-10">
+            <!-- 房贷基础知识 -->
+            <div class="card bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                    <i class="fas fa-calculator text-green-500 mr-2"></i>
+                    房贷基础知识：利率、成数与还款方式
+                </h3>
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="font-medium text-gray-700 mb-1">贷款成数：</h4>
+                        <p class="text-gray-700">首套房最高贷80%（需首付20%），二套房贷70%（首付30%）</p>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-medium text-gray-700 mb-1">利率选择：</h4>
+                        <div class="pl-2">
+                            <p class="text-blue-600 font-medium">固定利率：</p>
+                            <p class="text-gray-700 mb-2">适合长期持有，锁定成本（如30年期利率4.9%）</p>
+                            
+                            <p class="text-blue-600 font-medium">浮动利率：</p>
+                            <p class="text-gray-700">LPR+基点（如2024年5月首套房LPR为3.45%，实际利率3.7%）</p>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-medium text-gray-700 mb-1">还款方式：</h4>
+                        <div class="pl-2">
+                            <p class="text-green-600 font-medium">等额本息：</p>
+                            <p class="text-gray-700 mb-2">月供固定（适合收入稳定的工薪族）</p>
+                            
+                            <p class="text-green-600 font-medium">等额本金：</p>
+                            <p class="text-gray-700">前期还款多，后期压力小（适合早期还款能力强的人）</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-3 rounded-lg">
+                        <h4 class="font-medium text-gray-700 mb-1">计算公式：</h4>
+                        <p class="text-gray-700 font-mono">月供 = [贷款总额 × 月利率 × (1+月利率)^还款月数] ÷ [(1+月利率)^还款月数 -1]</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 烂尾楼应对策略 -->
+            <div class="card bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                    <i class="fas fa-exclamation-triangle text-red-500 mr-2"></i>
+                    烂尾楼应对策略：从维权到法律救济
+                </h3>
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="font-medium text-gray-700 mb-2">风险识别：</h4>
+                        <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                            <li>开发商资金链紧张（如延期交房超3个月、工地停工超15天）</li>
+                            <li>预售资金未监管（可通过住建局官网查询项目资金监管账户）</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-medium text-gray-700 mb-2">维权路径：</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-start">
+                                <span class="step-number bg-red-500">1</span>
+                                <span class="flex-1">催告交房：书面通知开发商限期履约（保留EMS邮寄凭证）</span>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="step-number bg-red-500">2</span>
+                                <span class="flex-1">解除合同：逾期交房超90天，起诉要求退房并索赔（需证明合同目的无法实现）</span>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="step-number bg-red-500">3</span>
+                                <span class="flex-1">参与重整：开发商破产清算时，购房人可申报债权（优先于普通债权人）</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-3 rounded-lg">
+                        <h4 class="font-medium text-blue-700 mb-1">最新政策支持：</h4>
+                        <p class="text-gray-700">2024年5月国务院明确"保交楼"政策，地方政府可收购未售商品房转保障房，优先保障购房人权益</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 买房避坑 -->
+        <div class="card bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                <i class="fas fa-shield-alt text-orange-500 mr-2"></i>
+                买房避坑：警惕高风险楼盘
+            </h3>
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="bg-red-50 p-4 rounded-lg">
+                    <h4 class="font-medium text-red-700 mb-2 flex items-center">
+                        <i class="fas fa-file-certificate mr-2"></i>
+                        五证核查
+                    </h4>
+                    <p class="text-gray-700">必须具备《预售许可证》（无证销售属违法，无法网签备案）</p>
+                </div>
+                <div class="bg-yellow-50 p-4 rounded-lg">
+                    <h4 class="font-medium text-yellow-700 mb-2 flex items-center">
+                        <i class="fas fa-tag mr-2"></i>
+                        价格异常
+                    </h4>
+                    <p class="text-gray-700">成交价低于周边均价20%需警惕（可能是开发商资金链断裂急于套现）</p>
+                </div>
+                <div class="bg-green-50 p-4 rounded-lg">
+                    <h4 class="font-medium text-green-700 mb-2 flex items-center">
+                        <i class="fas fa-hard-hat mr-2"></i>
+                        工地巡查
+                    </h4>
+                    <p class="text-gray-700">每月至少实地查看一次施工进度（如主体结构长期停滞需预警）</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="mb-16">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+            <i class="fas fa-first-aid text-red-500 mr-3"></i>
+            紧急情况处理手册
+        </h2>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- 租房突发断水断电 -->
+            <div class="card bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                    <i class="fas fa-plug text-blue-500 mr-2"></i>
+                    租房突发断水断电
+                </h3>
+                <div>
+                    <h4 class="font-medium text-gray-700 mb-2">责任归属：</h4>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                        <li>若租户已缴费仍断供，属房东违约（可要求减免租金或解除合同）</li>
+                        <li>若物业因总表欠费停水停电，房东需承担责任（合同中应写明"房东需按时缴纳总表费用"）</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- 房贷断供后果 -->
+            <div class="card bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                    <i class="fas fa-exclamation-circle text-red-500 mr-2"></i>
+                    房贷断供后果
+                </h3>
+                <div class="space-y-3">
+                    <div class="flex items-start">
+                        <span class="step-number bg-yellow-500">1</span>
+                        <span class="flex-1">逾期1-3个月：罚息（日利率0.05%-0.1%）+征信黑名单</span>
+                    </div>
+                    <div class="flex items-start">
+                        <span class="step-number bg-red-500">2</span>
+                        <span class="flex-1">逾期超6个月：银行起诉拍卖房产（拍卖价低于市场价30%-50%）</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 遇到烂尾楼如何止损 -->
+            <div class="card bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                    <i class="fas fa-hands-helping text-green-500 mr-2"></i>
+                    遇到烂尾楼如何止损
+                </h3>
+                <div>
+                    <h4 class="font-medium text-gray-700 mb-2">自救方案：</h4>
+                    <ul class="list-disc pl-5 space-y-1 text-gray-700">
+                        <li>联合业主成立维权小组，聘请律师团队集体谈判</li>
+                        <li>向地方政府申请接管项目（如郑州"保交楼"专项借款案例）</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <section class="mb-16">
+        <div class="card bg-blue-50 rounded-lg shadow-md p-8 text-center">
+            <h2 class="text-2xl font-bold text-blue-800 mb-4">租房与买房生存指南</h2>
+            <p class="text-gray-700 mb-6">
+                租房与买房是大学生踏入社会后的首场"生存考试"。掌握水电缴费规则、网络安装技能、房贷计算逻辑及烂尾楼应对策略，能让你在复杂市场中规避风险、守住财富。
+            </p>
+            <div class="bg-white p-4 rounded-lg inline-block max-w-lg mx-auto">
+                <p class="text-gray-800 font-medium">
+                    <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
+                    记住：合同条款必须逐字审阅，政策动态需实时跟踪，切勿轻信口头承诺。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center text-gray-500 text-sm mt-12">
+        <div class="mb-4">
+            <p>资料来源：</p>
+            <p class="text-gray-600">南京市房屋租赁合同示范文本、2024年保交楼新政、烂尾楼法律风险分析</p>
+        </div>
+        <div class="border-t pt-4">
+            <p>网页由问小白生成，仅供参考</p>
+            <p>最后更新时间为2025-05-27 ，星期二</p>
+            <p>问小白网址：wenxiaobai.com</p>
+        </div>
+    </footer>
+
+    <script>
+        // 平滑滚动效果
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // 卡片悬停效果
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-5px)';
+                card.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.1)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+                card.style.boxShadow = '';
+            });
+        });
+    </script>
+</body>
+</html>
