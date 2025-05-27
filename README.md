@@ -1,7 +1,7 @@
 # 干货
 几个网页分别回应了当前所缺失的教育
 1.从大学到职场：https://www.wenxiaobai.com/share/html/4e00d186-cbdf-4478-9b46-58966b0a1ff5_1748348993078?refer_channel=answer_visualization
-
+从大学到职场.html
 2.必备的法律知识（实用的经济法、婚姻法等）（正当防卫与互殴）：https://www.wenxiaobai.com/share/html/eea55cf6-edcb-4d22-95d5-a27a4a174c80_1748349455543?refer_channel=answer_visualization
 
 3.消费主义和防诈骗指南（论当钱变成一串数字与密码后是否让人对花钱失去概念（避免找工作被骗、避免过度消费、了解盲盒扭蛋与手游氪金的危害、创业与投资需谨慎）:https://www.wenxiaobai.com/share/html/9ea9b245-eee3-4d69-8fb0-68686917f95e_1748349945262?refer_channel=answer_visualization
