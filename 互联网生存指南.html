@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>互联网时代生存指南：从隐私保护到反乌合之众</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .highlight {
+            position: relative;
+            z-index: 1;
+        }
+        .highlight::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 40%;
+            background-color: rgba(37, 99, 235, 0.2);
+            z-index: -1;
+            transform: skewY(-2deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- 封面 -->
+    <div class="gradient-bg text-white py-16 md:py-24 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-6">互联网时代生存指南</h1>
+            <h2 class="text-xl md:text-2xl font-medium mb-8">从隐私保护到反乌合之众</h2>
+            <p class="text-lg md:text-xl opacity-90">给大学生的硬核互联网必修课</p>
+            <div class="mt-12 flex justify-center">
+                <div class="w-16 h-1 bg-blue-300 rounded-full"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 内容区 -->
+    <div class="max-w-4xl mx-auto px-6 py-12">
+        <!-- 第一部分 -->
+        <section class="mb-20">
+            <div class="flex items-center mb-8">
+                <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                    <span class="text-blue-600 text-xl font-bold">1</span>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-bold">互联网是否有隐私？数据脱敏与加密的真相</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- 卡片1 -->
+                <div class="card bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center mr-3">
+                            <i class="fas fa-shield-alt text-blue-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">隐私泄露的本质：数据脱敏≠绝对安全</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">数据脱敏技术（如加密、哈希、扰动）看似能保护隐私，但<strong class="text-blue-600">87%的美国人仅凭性别、出生日期和邮编即可唯一识别身份</strong>。2014年马萨诸塞州医疗数据匿名化被破解事件证明，单一字段删除无法彻底消除风险。</p>
+                    
+                    <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                        <h4 class="font-bold text-blue-700 mb-2 flex items-center">
+                            <i class="fas fa-lightbulb mr-2"></i>行动建议
+                        </h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2">•</span>
+                                <span>避免在社交平台暴露生日、住址、手机号等组合信息</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2">•</span>
+                                <span>使用<strong class="text-blue-600">端到端加密通信工具</strong>（如Signal），防止聊天记录被逆向工程破解</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 卡片2 -->
+                <div class="card bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center mr-3">
+                            <i class="fas fa-lock text-blue-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">加密算法的局限性</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">常见加密算法（如AES-256）虽可抵御暴力破解，但<strong class="text-blue-600">2024年量子计算机突破性进展已威胁传统加密体系</strong>。</p>
+                    
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-blue-700 mb-2 flex items-center">
+                            <i class="fas fa-tools mr-2"></i>破局方案
+                        </h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2">•</span>
+                                <span>关注区块链技术的抗量子签名方案（如Lamport签名）</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2">•</span>
+                                <span>使用动态密码管理器（如Bitwarden），定期更换敏感账户密码</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第二部分 -->
+        <section class="mb-20">
+            <div class="flex items-center mb-8">
+                <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                    <span class="text-blue-600 text-xl font-bold">2</span>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-bold">IP地址与开盒攻击：你的数字身份如何暴露</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- 卡片1 -->
+                <div class="card bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center mr-3">
+                            <i class="fas fa-map-marker-alt text-blue-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">IP地址的致命漏洞</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">IPv4地址（如192.168.1.1）可通过<strong class="text-blue-600">地理定位技术精确到50公里内</strong>，黑客结合Wi-Fi信号强度分析甚至能定位到具体楼层。</p>
+                    
+                    <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                        <h4 class="font-bold text-blue-700 mb-2">开盒攻击原理</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2">•</span>
+                                <span>通过Discord服务器日志、游戏对战记录等渠道获取目标IP</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2">•</span>
+                                <span>利用运营商数据库反查真实身份信息（需配合社会工程学欺骗客服）</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 卡片2 -->
+                <div class="card bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center mr-3">
+                            <i class="fas fa-user-shield text-blue-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">防御策略</h3>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-blue-700 mb-2">基础版</h4>
+                            <p>使用免费代理服务器（如Hide.me），但需警惕免费服务的日志留存风险</p>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-blue-700 mb-2">进阶版</h4>
+                            <p>配置Tor网络+物理隔离设备，实现多层匿名化</p>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-blue-700 mb-2">应急方案</h4>
+                            <p>遭遇威胁时立即联系ISP更换IP，并向网信办举报（电话：12377）</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第三部分 -->
+        <section class="mb-20">
+            <div class="flex items-center mb-8">
+                <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                    <span class="text-blue-600 text-xl font-bold">3</span>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-bold">网暴与反网暴：从被动防御到主动维权</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- 卡片1 -->
+                <div class="card bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center mr-3">
+                            <i class="fas fa-bullhorn text-blue-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">网暴的五大武器</h3>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div class="flex items-start">
+                            <span class="text-blue-500 font-bold mr-2">•</span>
+                            <div>
+                                <strong class="text-blue-600">人肉搜索</strong>：通过快递单号、社交媒体定位等渠道拼凑个人信息
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <span class="text-blue-500 font-bold mr-2">•</span>
+                            <div>
+                                <strong class="text-blue-600">舆论操控</strong>：利用"羊群效应"，制造#某大学性侵门#等虚假话题
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <span class="text-blue-500 font-bold mr-2">•</span>
+                            <div>
+                                <strong class="text-blue-600">心理施压</strong>：发送死亡威胁短信、伪造亲属死亡通知等精神攻击
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <span class="text-blue-500 font-bold mr-2">•</span>
+                            <div>
+                                <strong class="text-blue-600">经济勒索</strong>：以曝光隐私为由要求支付"封口费"
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <span class="text-blue-500 font-bold mr-2">•</span>
+                            <div>
+                                <strong class="text-blue-600">法律陷阱</strong>：伪造证据举报受害者违规（如P图涉黄照片）
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 卡片2 -->
+                <div class="card bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center mr-3">
+                            <i class="fas fa-gavel text-blue-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">反击四步法</h3>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-blue-700 mb-2">取证阶段</h4>
+                            <p>用录屏+公证云App固定证据链，重点保存IP地址、时间戳</p>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-blue-700 mb-2">平台申诉</h4>
+                            <p>向微博/抖音提交《侵权通知》，要求删除内容并封禁账号</p>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-blue-700 mb-2">行政维权</h4>
+                            <p>依据《治安管理处罚法》第42条，向公安机关报案</p>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-blue-700 mb-2">民事追责</h4>
+                            <p>起诉施暴者赔偿精神损失费（最高5万元）</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第四部分 -->
+        <section class="mb-20">
+            <div class="flex items-center mb-8">
+                <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                    <span class="text-blue-600 text-xl font-bold">4</span>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-bold">谣言与辟谣：识别信息操纵的底层逻辑</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- 卡片1 -->
+                <div class="card bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center mr-3">
+                            <i class="fas fa-comment-slash text-blue-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">谣言传播的三大公式</h3>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-blue-700 mb-2">恐惧驱动</h4>
+                            <p>"某高校食堂发现H7N9病毒"比"食堂卫生评级A级"传播量高37倍</p>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-blue-700 mb-2">认知失调</h4>
+                            <p>利用"反转新闻"制造信任崩塌（如先称"学生打老师"，后澄清为正当防卫）</p>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-blue-700 mb-2">算法助推</h4>
+                            <p>短视频平台每播放1分钟谣言视频，相关话题权重提升15%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 卡片2 -->
+                <div class="card bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center mr-3">
+                            <i class="fas fa-search text-blue-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">辟谣实战技巧</h3>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-blue-700 mb-2">溯源法</h4>
+                            <p>通过"天眼查"核查信息发布主体资质（如"健康科普号"是否隶属三甲医院）</p>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-blue-700 mb-2">交叉验证</h4>
+                            <p>对比3个以上权威信源（新华社、政府官网、学术期刊）</p>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-blue-700 mb-2">反向检索</h4>
+                            <p>用百度快照查看历史版本，识别篡改痕迹</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 回旋镖效应 -->
+            <div class="mt-8 card bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                <div class="flex items-center mb-4">
+                    <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center mr-3">
+                        <i class="fas fa-reply-all text-blue-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold">回旋镖效应应对</h3>
+                </div>
+                
+                <p class="text-gray-600 mb-4">当遭遇"合订本"攻击（将碎片化言论拼接曲解）时：</p>
+                
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <p>立即发布完整对话截图，标注上下文语境</p>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <p>向平台申请"事实核查"标签，争取流量支持</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第五部分 -->
+        <section class="mb-20">
+            <div class="flex items-center mb-8">
+                <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                    <span class="text-blue-600 text-xl font-bold">5</span>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-bold">拒绝乌合之众：在信息洪流中保持清醒</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- 卡片1 -->
+                <div class="card bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center mr-3">
+                            <i class="fas fa-users text-blue-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">群体极化的形成机制</h3>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-4">社交媒体算法通过"点击率优先"原则，推送极端化内容。例如，观看一次"内卷无意义"视频后，后续推荐中批判性内容占比提升至72%。</p>
+                    
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h4 class="font-bold text-blue-700 mb-2">破局关键</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2">•</span>
+                                <span>主动关闭"猜你喜欢"功能，改用RSS订阅获取多元观点</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-blue-500 mr-2">•</span>
+                                <span>每月参加1次线下辩论赛，训练批判性思维</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 卡片2 -->
+                <div class="card bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center mr-3">
+                            <i class="fas fa-brain text-blue-500"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">认知免疫系统构建</h3>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-blue-700 mb-2">信息过滤</h4>
+                            <p>安装uBlock Origin插件拦截90%广告诱导内容</p>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-blue-700 mb-2">逻辑训练</h4>
+                            <p>学习《批判性思维工具》中的"5问分析法"（来源可信度、证据链完整性等）</p>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <h4 class="font-bold text-blue-700 mb-2">数字排毒</h4>
+                            <p>设定"无网日"（每周日断网6小时），恢复真实社交能力</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第六部分 -->
+        <section class="mb-20">
+            <div class="flex items-center mb-8">
+                <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                    <span class="text-blue-600 text-xl font-bold">6</span>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-bold">紧急资源清单</h2>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full bg-white rounded-xl shadow-lg border border-gray-100">
+                    <thead class="bg-blue-600 text-white">
+                        <tr>
+                            <th class="py-3 px-4 text-left">场景</th>
+                            <th class="py-3 px-4 text-left">解决方案</th>
+                            <th class="py-3 px-4 text-left">联系方式/工具</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="py-3 px-4 font-medium">隐私泄露</td>
+                            <td class="py-3 px-4">申请数据删除权</td>
+                            <td class="py-3 px-4">12377（国家网信办）</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-medium">网络暴力</td>
+                            <td class="py-3 px-4">紧急冻结施暴账号</td>
+                            <td class="py-3 px-4">支付宝"网络举报"小程序</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-medium">谣言辨识</td>
+                            <td class="py-3 px-4">事实核查工具包</td>
+                            <td class="py-3 px-4">"中国互联网联合辟谣平台"网站</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-medium">IP追踪</td>
+                            <td class="py-3 px-4">隐藏真实地理位置</td>
+                            <td class="py-3 px-4">ProtonVPN（抗审查版）</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 font-medium">法律维权</td>
+                            <td class="py-3 px-4">在线法律援助</td>
+                            <td class="py-3 px-4">12348法律服务热线</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 结语 -->
+        <section class="mb-12">
+            <div class="bg-blue-50 p-8 rounded-xl">
+                <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">结语</h2>
+                <p class="text-lg text-gray-700 mb-6 text-center">
+                    互联网不是法外之地，而是一面放大人性的镜子。掌握隐私保护技术、理解网暴运作机制、建立独立思考体系，才能在信息迷雾中锚定自我。
+                </p>
+                <p class="text-xl font-bold text-blue-600 text-center">
+                    真正的自由不是随心所欲，而是自我主宰
+                </p>
+            </div>
+        </section>
+
+        <!-- 参考资料 -->
+        <section class="bg-gray-100 p-6 rounded-xl">
+            <h3 class="text-lg font-bold mb-4">参考资料</h3>
+            <div class="grid md:grid-cols-2 gap-2">
+                <p class="text-gray-600">互联网时代隐私保护技术报告</p>
+                <p class="text-gray-600">IP地址隐藏方法论</p>
+                <p class="text-gray-600">网络暴力信息治理规定</p>
+                <p class="text-gray-600">谣言传播模型研究</p>
+                <p class="text-gray-600">数字隐私保护指南</p>
+                <p class="text-gray-600">IP地址分配原理</p>
+                <p class="text-gray-600">依法治网政策解读</p>
+                <p class="text-gray-600">社交媒体算法解析</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-100 py-8 px-6">
+        <div class="max-w-4xl mx-auto text-center text-gray-500">
+            <p>网页由问小白生成，仅供参考</p>
+            <p class="mt-2">最后更新时间为2025-05-27 ，星期二</p>
+            <p class="mt-2">问小白网址：wenxiaobai.com</p>
+        </div>
+    </footer>
+
+    <script>
+        // 简单的滚动效果
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
