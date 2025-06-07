@@ -13,3 +13,10 @@
 6.如何面对不同观念的人：https://www.wenxiaobai.com/share/html/6acd95ed-6bdc-4160-b7a0-1953d6b5eff1_1748352167385?refer_channel=answer_visualization
 
 7.互联网必备知识（互联网里是否有隐私？IP与开盒的原理，关于网暴与反网暴）（谣言与辟谣，回旋镖与合订本）如何在浮躁的当下避免成为乌合之众：https://www.wenxiaobai.com/share/html/1f965842-2087-4d92-a673-6721facae0b5_1748353232458?refer_channel=answer_visualization
+
+浮云聚散本无定，莫执得失乱心境。  
+山高不阻凌云志，水深难遮皎月明。  
+顺时修德勤补拙，逆处守心静养灵。  
+锋芒藏拙成大器，谦卑若谷纳繁星。  
+情浓易染离别苦，缘浅方知淡泊清。  
+若问此生何所寄？半随天意半躬行。
