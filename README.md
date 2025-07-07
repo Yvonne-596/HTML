@@ -11,7 +11,7 @@
 5.租房与买房必备知识（如何缴水电费、接网线、安装电脑）（什么是房贷与烂尾楼）：https://www.wenxiaobai.com/share/html/fd77e1eb-6c21-4a7b-a366-bb2ced13f2c9_1748351122228?refer_channel=answer_visualization
 
 6.如何面对不同观念的人：https://www.wenxiaobai.com/share/html/6acd95ed-6bdc-4160-b7a0-1953d6b5eff1_1748352167385?refer_channel=answer_visualization
-
+与不同观念的人共处.html
 7.互联网必备知识（互联网里是否有隐私？IP与开盒的原理，关于网暴与反网暴）（谣言与辟谣，回旋镖与合订本）如何在浮躁的当下避免成为乌合之众：https://www.wenxiaobai.com/share/html/1f965842-2087-4d92-a673-6721facae0b5_1748353232458?refer_channel=answer_visualization
 
 浮云聚散本无定，莫执得失乱心境。  
