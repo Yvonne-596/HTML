@@ -23,10 +23,6 @@
 > **若问此生何所寄？半随天意半躬行**  
 > 献给在复杂社会中保持清醒的探索者
 
-<div align="center">
-  <img src="https://via.placeholder.com/800x200/1e1f29/FFFFFF?text=Society+Survival+Skills+Framework" alt="知识体系导图">
-</div>
-
 ## 🌟 为什么需要这个项目？
 传统教育在**法律常识、金融防诈、职场转型、网络生存**等关键领域存在明显缺失。本项目系统整合七大生存核心技能，填补"社会教育真空地带"。
 
